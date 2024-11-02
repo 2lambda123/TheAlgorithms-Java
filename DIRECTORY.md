@@ -566,6 +566,7 @@
             * [SelfAdjustingScheduling](https://github.com/TheAlgorithms/Java/blob/master/src/main/java/com/thealgorithms/scheduling/SelfAdjustingScheduling.java)
             * [SJFScheduling](https://github.com/TheAlgorithms/Java/blob/master/src/main/java/com/thealgorithms/scheduling/SJFScheduling.java)
             * [SlackTimeScheduling](https://github.com/TheAlgorithms/Java/blob/master/src/main/java/com/thealgorithms/scheduling/SlackTimeScheduling.java)
+            * [SpeculativeExecutionScheduling](https://github.com/TheAlgorithms/Java/blob/master/src/main/java/com/thealgorithms/scheduling/SpeculativeExecutionScheduling.java)
             * [SRTFScheduling](https://github.com/TheAlgorithms/Java/blob/master/src/main/java/com/thealgorithms/scheduling/SRTFScheduling.java)
           * searches
             * [BinarySearch](https://github.com/TheAlgorithms/Java/blob/master/src/main/java/com/thealgorithms/searches/BinarySearch.java)
@@ -1202,6 +1203,7 @@
             * [SelfAdjustingSchedulingTest](https://github.com/TheAlgorithms/Java/blob/master/src/test/java/com/thealgorithms/scheduling/SelfAdjustingSchedulingTest.java)
             * [SJFSchedulingTest](https://github.com/TheAlgorithms/Java/blob/master/src/test/java/com/thealgorithms/scheduling/SJFSchedulingTest.java)
             * [SlackTimeSchedulingTest](https://github.com/TheAlgorithms/Java/blob/master/src/test/java/com/thealgorithms/scheduling/SlackTimeSchedulingTest.java)
+            * [SpeculativeExecutionSchedulingTest](https://github.com/TheAlgorithms/Java/blob/master/src/test/java/com/thealgorithms/scheduling/SpeculativeExecutionSchedulingTest.java)
             * [SRTFSchedulingTest](https://github.com/TheAlgorithms/Java/blob/master/src/test/java/com/thealgorithms/scheduling/SRTFSchedulingTest.java)
           * searches
             * [BinarySearch2dArrayTest](https://github.com/TheAlgorithms/Java/blob/master/src/test/java/com/thealgorithms/searches/BinarySearch2dArrayTest.java)
