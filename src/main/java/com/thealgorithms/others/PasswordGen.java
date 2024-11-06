@@ -1,5 +1,6 @@
 package com.thealgorithms.others;
 
+import java.security.SecureRandom;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -34,7 +35,7 @@ final class PasswordGen {
             throw new IllegalArgumentException("Incorrect length parameters: minLength must be <= maxLength and both must be > 0");
         }
 
-        Random random = new Random();
+        Random random = new SecureRandom();
 
         List<Character> letters = new ArrayList<>();
         for (char c : ALL_CHARACTERS.toCharArray()) {

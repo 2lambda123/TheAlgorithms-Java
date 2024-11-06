@@ -1,5 +1,6 @@
 package com.thealgorithms.datastructures.hashmap.hashing;
 
+import java.security.SecureRandom;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertNull;
@@ -117,7 +118,7 @@ abstract class MapTest {
     void hashTest() {
         Map<Integer, String> map = getMap();
         int testSize = 100;
-        Random random = new Random();
+        Random random = new SecureRandom();
         for (int i = 0; i < 1000; i++) {
             int randomInt = random.nextInt();
             int hashIndex = map.hash(randomInt, testSize);

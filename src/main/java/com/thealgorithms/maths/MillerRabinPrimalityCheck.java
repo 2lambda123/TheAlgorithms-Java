@@ -1,5 +1,6 @@
 package com.thealgorithms.maths;
 
+import java.security.SecureRandom;
 import java.util.Random;
 
 public final class MillerRabinPrimalityCheck {
@@ -30,7 +31,7 @@ public final class MillerRabinPrimalityCheck {
             d >>= 1;
             s++;
         }
-        Random rnd = new Random();
+        Random rnd = new SecureRandom();
         for (int i = 0; i < k; i++) {
             long a = 2 + rnd.nextLong(n) % (n - 3);
             if (checkComposite(n, a, d, s)) {

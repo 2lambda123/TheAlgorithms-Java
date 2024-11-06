@@ -1,5 +1,6 @@
 package com.thealgorithms.maths;
 
+import java.security.SecureRandom;
 import java.util.Collections;
 import java.util.PriorityQueue;
 import java.util.Random;
@@ -11,7 +12,7 @@ public final class FindKthNumber {
     private FindKthNumber() {
     }
 
-    private static final Random RANDOM = new Random();
+    private static final Random RANDOM = new SecureRandom();
 
     public static int findKthMax(int[] array, int k) {
         if (k <= 0 || k > array.length) {

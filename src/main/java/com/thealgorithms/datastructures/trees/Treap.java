@@ -1,5 +1,6 @@
 package com.thealgorithms.datastructures.trees;
 
+import java.security.SecureRandom;
 import java.util.Random;
 
 /**
@@ -61,7 +62,7 @@ public class Treap {
      * random -> to generate random priority for the nodes in the Treap
      */
     private TreapNode root;
-    private Random random = new Random();
+    private Random random = new SecureRandom();
 
     /**
      * Constructors

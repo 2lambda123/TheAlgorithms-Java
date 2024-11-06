@@ -1,5 +1,6 @@
 package com.thealgorithms.scheduling;
 
+import java.security.SecureRandom;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
@@ -24,7 +25,7 @@ public final class LotteryScheduling {
      */
     public LotteryScheduling(final List<Process> processes) {
         this.processes = processes;
-        this.random = new Random();
+        this.random = new SecureRandom();
     }
 
     /**

@@ -1,6 +1,7 @@
 package com.thealgorithms.searches;
 
 import com.thealgorithms.devutils.searches.SearchAlgorithm;
+import java.security.SecureRandom;
 import java.util.HashSet;
 import java.util.Random;
 import java.util.Set;
@@ -18,7 +19,7 @@ import java.util.Set;
  */
 public class RandomSearch implements SearchAlgorithm {
 
-    private final Random random = new Random();
+    private final Random random = new SecureRandom();
 
     /**
      * Finds the index of a given element using random search.

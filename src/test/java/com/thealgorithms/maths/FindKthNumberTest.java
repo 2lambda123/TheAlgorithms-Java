@@ -1,5 +1,6 @@
 package com.thealgorithms.maths;
 
+import java.security.SecureRandom;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
@@ -52,7 +53,7 @@ public class FindKthNumberTest {
     @Test
     public void testFindKthMaxLargeArray() {
         int[] array = generateArray(1000);
-        int k = new Random().nextInt(1, array.length);
+        int k = new SecureRandom().nextInt(1, array.length);
         int result = FindKthNumber.findKthMax(array, k);
         int maxK = FindKthNumber.findKthMaxUsingHeap(array, k);
         Arrays.sort(array);
@@ -61,11 +62,11 @@ public class FindKthNumberTest {
     }
 
     public static int[] generateArray(int capacity) {
-        int size = new Random().nextInt(2, capacity);
+        int size = new SecureRandom().nextInt(2, capacity);
         int[] array = new int[size];
 
         for (int i = 0; i < size; i++) {
-            array[i] = new Random().nextInt(100); // Ensure positive values for testing
+            array[i] = new SecureRandom().nextInt(100); // Ensure positive values for testing
         }
         return array;
     }
