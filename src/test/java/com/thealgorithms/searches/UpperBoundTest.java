@@ -1,5 +1,6 @@
 package com.thealgorithms.searches;
 
+import java.security.SecureRandom;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
@@ -17,7 +18,7 @@ class UpperBoundTest {
         upperBound = new UpperBound();
 
         // Generate a sorted array of random integers for testing
-        Random random = new Random();
+        Random random = new SecureRandom();
         int size = 100;
         int maxElement = 100;
         sortedArray = random.ints(size, 1, maxElement)

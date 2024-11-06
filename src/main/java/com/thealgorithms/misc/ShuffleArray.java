@@ -1,5 +1,6 @@
 package com.thealgorithms.misc;
 
+import java.security.SecureRandom;
 import java.util.Random;
 
 /**
@@ -27,7 +28,7 @@ public final class ShuffleArray {
      * @param arr is the input array to be shuffled
      */
     public static void shuffle(int[] arr) {
-        Random random = new Random();
+        Random random = new SecureRandom();
         for (int i = arr.length - 1; i > 0; i--) {
             int j = random.nextInt(i + 1);
             int temp = arr[i];
